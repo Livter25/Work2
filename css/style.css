@@ -641,4 +641,189 @@ body {
 .stady__down__imgm:hover path {
   fill: red;
 }
+
+.cred {
+  height: 566px;
+  width: 100%;
+  background: #303263 url("../img/Cred.png") no-repeat center/cover;
+  color: #ffffff;
+}
+
+.cred::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 566px;
+  background-color: rgba(48, 50, 99, 0.7);
+}
+
+.cred__title {
+  position: relative;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  padding-top: 123px;
+}
+
+.cred__text {
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  margin-top: 52px;
+  line-height: 39.5px;
+  width: 68%;
+}
+
+.development {
+  height: 100%;
+  width: 100%;
+}
+
+.development__box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -18%;
+}
+
+.development__box2__col {
+  height: 315px;
+  width: 364px;
+  color: #ffffff;
+  position: relative;
+  border-bottom: solid 30px #ffffff;
+}
+
+.development__box2__col::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.development__box2__col__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.development__box2__col__content__arrow {
+  margin: auto;
+  margin-top: 65px;
+  height: 33px;
+  width: 32px;
+}
+
+.development__box2__col__content__arrow:hover {
+  cursor: pointer;
+}
+
+.development__box2__col__content__price {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'Open Sans';
+  padding: 14px 25px 14px 25px;
+  margin-left: 35px;
+  margin-top: 47px;
+}
+
+.development__box2__col__content__lan {
+  border: solid 2px #00b9e7;
+}
+
+.development__box2__col__content__lan:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #00b9e7;
+}
+
+.development__box2__col__content__web {
+  border: solid 2px #ffcb00;
+}
+
+.development__box2__col__content__web:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #ffcb00;
+}
+
+.development__box2__col__content__shop {
+  border: solid 2px #66bf0d;
+}
+
+.development__box2__col__content__shop:hover {
+  cursor: pointer;
+  color: #000000;
+  background: #66bf0d;
+}
+
+.development__box2__col__title {
+  position: relative;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Futura Book';
+  padding-left: 35px;
+  padding-top: 75px;
+  padding-right: 73px;
+  margin: 0;
+}
+
+.development__box2__col__title::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 260px;
+  background: #ffffff;
+  margin-top: 7.5%;
+  position: absolute;
+}
+
+.development__box2__col__lan {
+  background: url("../img/landing.png") no-repeat center/cover;
+}
+
+.development__box2__col__lan:hover {
+  border-bottom: solid 30px #00b9e7;
+}
+
+.development__box2__col__web {
+  background: url("../img/web.png") no-repeat center/cover;
+}
+
+.development__box2__col__web:hover {
+  border-bottom: solid 30px #ffcb00;
+}
+
+.development__box2__col__shop {
+  background: url("../img/shop.png") no-repeat center/cover;
+}
+
+.development__box2__col__shop:hover {
+  border-bottom: solid 30px #66bf0d;
+}
+
+.development__box1 {
+  position: relative;
+  width: 666px;
+  height: 526px;
+  background: url("../img/develop.png") no-repeat center/cover;
+  color: #ffffff;
+}
+
+.development__box1__title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 133px;
+  margin-top: -10%;
+}
 /*# sourceMappingURL=style.css.map */
