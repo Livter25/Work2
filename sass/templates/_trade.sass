@@ -1,0 +1,62 @@
+.trade
+    height: 100%
+    width: 100%
+    background: url('../img/trade.jpg') no-repeat center / cover
+    position: relative
+    padding-bottom: 1px
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba($black, 0.5)
+    &__button
+        position: relative
+        font-size: 24px
+        font-weight: bold
+        background: $primary
+        color: $light
+        padding: 19px 30px 24px 22px
+        text-align: center
+        width: 22%
+        margin: auto
+        border-radius: 25px
+        margin-top: 17px
+        margin-bottom: 47px
+        cursor: pointer
+        transition: all 0.5s
+        &:hover
+            background: $light
+            color: $primary
+            
+
+    &__title
+        position: relative
+        font-size: 46px
+        font-weight: bold
+        text-align: center
+        color: $light
+        padding: 64px 0 101px 0
+        margin: 0
+
+    &__content
+        position: relative
+        display: flex
+        justify-content: space-around
+        color: $light
+        width: 109%
+        &__col
+            &__text
+                font-size: 18px 
+                line-height: 30px
+                width: 81%
+                font-weight: normal
+            &__title
+                display: flex
+                font-size: 30px
+                font-weight: bold
+                font-family: 'Arial'
+                &__text
+                    margin-left: 22px
+                &__long
+                    margin-left: -13%
