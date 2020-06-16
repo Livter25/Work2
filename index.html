@@ -271,9 +271,69 @@
                 <div class="trade__button">ОЦЕНИТЬ МОЙ САЙТ</div>
             </div>
         </section>
+        <section class="section care">
+            <div class="container care__container">
+                <div class="care__content">
+                    <h3 class="care__content__title">ЗАБОТА О КАЖДОМ</h3>
+                    <p class="care__content__text">Рожденный в нашей студии проект обречен
+                        на пожизненную поддержку. Мы обучим вас
+                        ведению сайта, обновим контент и настроим
+                        продвижение в любой момент. Каждая деталь
+                        вашего бизнеса является состовляющим звеном
+                        нашей студии. И мы позаботимся о вас.</p>
+                </div>
+                <img src="img/care.png" alt="care" class="care__img">
+            </div>
+        </section>
+        <section class="section connect">
+            <div class="container connect__container">
+                <div class="connect__content">
+                    <h3 class="connect__content__title">СВЯЖИТЕСЬ С НАМИ</h3>
+                    <p class="connect__content__text">Готовы начать работу? Отправьте
+                        сообщение и свои контакты, мы
+                        ответим вам в течении 2-ух дней.
+                        Схема работы с каждым клиентом
+                        будет разработана индивидуально 
+                        в зависимости от поставленных задач.</p>
+                </div>
+                <div class="connect__form">
+                    <form action="send.php" method="POST" class="form modal__form">
+                        <div class="modal__title__input">
+                            <div class="modal__title__in">
+            
+                                <label for="modal-user-name" class="label form__label label--light modal__label"></label>
+                                <input type="text" name="userName" class="input form__input modal__input " id="modal-user-name" placeholder="Ваше имя:">
+                            </div>
+                            <div class="modal__title__in">
+            
+                                <label for="modal-user-surname" class="label form__label label--light modal__label"></label>
+                                <input type="text" name="userSurname" class="input form__input modal__input modal__input__surname " id="modal-user-surname" placeholder="Ваша фамилия:">
+                            </div>
+
+                        </div>
+                        
+                        <div class="modal__email__input">
+                            
+                            <label for="modal-user-email" class="label form__label label--light modal__label"></label>
+                            <input type="email" name="userEmail" class="input form__input modal__input" id="modal-user-email" placeholder="Ваш email">
+                        </div>
+                        <div class="modal__price__input">
+                                
+                            <label for="price-user-masange" class="label modal__label label--light price__label"></label>
+                            <input type="text" name="userMasange" class="input modal__input price__input" id="price-user-masange" placeholder="Ведите Ваше сообщение">
+                        </div>
+
+                        <button class="button button--primary modal__button">Отправить </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
     </main>
     
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

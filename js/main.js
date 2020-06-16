@@ -1,35 +1,59 @@
-/*
-     * Replace all SVG images with inline SVG
-     */
-    jQuery('img.svg').each(function(){
-        var $img = jQuery(this);
-        var imgID = $img.attr('id');
-        var imgClass = $img.attr('class');
-        var imgURL = $img.attr('src');
-
-        jQuery.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
-
-            // Add replaced image ID to the new SVG
-            if(typeof imgID !== 'undefined') {
-                $svg = $svg.attr('id', imgID);
-            }
-            // Add replaced image classes to the new SVG
-            if(typeof imgClass !== 'undefined') {
-                $svg = $svg.attr('class', imgClass+' replaced-svg');
-            }
-
-            // Remove any invalid XML tags as per http://validator.w3.org
-            $svg = $svg.removeAttr('xmlns:a');
-
-            // Replace image with new SVG
-            $img.replaceWith($svg);
-
-        }, 'xml');
-
-    });
-
+$(document).ready(function () {
+    $('.modal__form').validate({
+        errorPlacement: function (error, element) {
+          if (element.attr("type") == "checkbox") {
+              return element.next('label').append(error);
+          }
+      
+           error.insertAfter($(element));
+        },
+        errorClass: "invalid",
+        errorElement: "em",
+        rules: {
+          // simple rule, converted to {required:true}
+          userName: {
+            required: true,
+            minlength: 4,
+            maxlength: 15,
+            
+          },
+          userSurname: {
+            required: true,
+            minlength: 4,
+            maxlength: 15,
+            
+            
+          },
+          userMasange: "required",
+          // compound rule
+          userEmail: {
+            required: true,
+            email: true
+          },
+          policycheckbox: "required",
+        },
+        messages: {
+            userName:{
+                required: "Имя обязательно ",
+                minlength: jQuery.validator.format("Имя не короче {0} букв "),
+                maxlength: jQuery.validator.format("Имя не длинее {0} букв ")
+            } ,
+            userSurname:{
+                required: "Фамилия обязательна ",
+                minlength: jQuery.validator.format("Фамилия не короче {0} букв "),
+                maxlength: jQuery.validator.format("Фамилия не длинее {0} букв ")
+            } ,
+            userMasange:{
+                required: "Сообщение обязательно",
+            },
+            userEmail: {
+                required: "Обязателно укажите Email",
+                email: "Введите в формате sdfsd@asdasd.com"
+            },
+        }
+    
+      });
+});
 
 
 

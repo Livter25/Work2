@@ -1051,4 +1051,166 @@ body {
 .trade__content__col__title__long {
   margin-left: -13%;
 }
+
+.modal {
+  margin-top: 131px;
+}
+
+.modal__button {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f6ae48;
+  color: #ffffff;
+  padding: 17px;
+  text-align: center;
+  width: 25%;
+  border-radius: 25px;
+  margin-top: 17px;
+  cursor: pointer;
+  margin-left: 75%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: none;
+}
+
+.modal__button:hover {
+  background: #ffffff;
+  color: #f6ae48;
+}
+
+.modal__form {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.modal__email {
+  width: 100%;
+}
+
+.modal__title__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__input {
+  width: 95.1%;
+  font-size: 18pt;
+  background: transparent;
+  border: 5px solid #ffffff;
+  padding: 19px 0 19px 23px;
+  color: #ffffff;
+}
+
+.modal__input__surname {
+  margin-left: 9px;
+  width: 87.7%;
+}
+
+.price__input {
+  padding-bottom: 115px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+input::-moz-placeholder {
+  color: #ffffff;
+}
+
+em.invalid {
+  position: absolute;
+  color: #f6ae48;
+  margin-top: -4%;
+  margin-left: 12%;
+}
+
+.care {
+  height: 100%;
+  width: 100%;
+}
+
+.care__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.care__content__title {
+  background: url("../img/caref.png") no-repeat left/cover;
+  font-size: 46px;
+  font-weight: bold;
+  background-size: 76%;
+  padding: 20px 0 20px 41px;
+  margin-left: -5%;
+}
+
+.care__content__text {
+  width: 80%;
+  font-family: 'Ubuntu';
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.connect {
+  height: 648px;
+  width: 100%;
+  background: #303263 url("../img/Cred.png") no-repeat;
+  background-size: 122%;
+  background-position: bottom;
+  color: #ffffff;
+}
+
+.connect__form {
+  margin-top: 131px;
+}
+
+.connect__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.connect::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 648px;
+  background-color: rgba(48, 50, 99, 0.7);
+}
+
+.connect__content {
+  width: 50%;
+  margin-top: 131px;
+}
+
+.connect__content__title {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.connect__content__text {
+  position: relative;
+  width: 55%;
+  font-family: 'Ubuntu';
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
 /*# sourceMappingURL=style.css.map */
